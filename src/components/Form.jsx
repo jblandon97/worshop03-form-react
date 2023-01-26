@@ -12,7 +12,7 @@ const Form = () => {
     <section>
       <button id="button-blue">Try it free 7 days then $20/mo. thereafter</button>
       <div className="login">
-        <form id="thisForm" onSubmit={handleSubmit(onSubmit)}  >
+        <form id="thisForm" onSubmit={handleSubmit(onSubmit)}>
           <input type="text" placeholder="First Name" id="name" name="name" {...register("name", { required: true })} />
           {errors.name && <p>Este campo no puede estar vacío</p>}
           <input type="text" placeholder="Last Name" id="Last Name" name="lastName" {...register("lastName", { required: true })} />
